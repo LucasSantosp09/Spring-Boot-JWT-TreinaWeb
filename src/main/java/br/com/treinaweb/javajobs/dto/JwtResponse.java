@@ -15,4 +15,6 @@ public class JwtResponse {
     private String type;
 
     private Date expiresAt;
+
+    private String refreshToken;
 }

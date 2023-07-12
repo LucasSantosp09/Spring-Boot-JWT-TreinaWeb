@@ -42,4 +42,9 @@ public class UserContoller {
         return authenticationService.createJwtResponse(userDTO);
     }
 
+    @PostMapping("/refresh/{refreshToken}")
+    public JwtResponse refresh(@PathVariable String refreshToken) {
+        return authenticationService.createJwtResponse(refreshToken);
+    }
+
 }
